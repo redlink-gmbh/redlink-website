@@ -1,10 +1,10 @@
 <template>
   <main-content>
     <h1>Blogs</h1>
-    <div v-for="team in blogs" :key="team.title">
-      <nuxt-link :to="localePath({ path: `team/${team.slug}` })" class="card card--clickable">
-        <h3>{{team.title}}</h3>
-        <p>{{team.description}}</p>
+    <div v-for="blog in blogs" :key="blog.title">
+      <nuxt-link :to="localePath({ path: `blogs/${blog.slug}` })" class="card card--clickable">
+        <h3>{{blog.title}}</h3>
+        <p>{{blog.description}}</p>
       </nuxt-link>
     </div>
   </main-content>
@@ -15,9 +15,10 @@ export default {
   async asyncData({ $content, error, i18n }) {
     let blogs;
     try {
-      blogs = await $content('team').where({ slug: { $contains: `.${i18n.locale || 'de'}` } }).fetch();
+      blogs = await $content('blog').where({ slug: { $contains: `.${i18n.locale || 'de'}` } }).fetch();
+      console.log(blogs)
     } catch (e) {
-      error({ message: 'News entries not found' });
+      error({ message: 'Blog entries not found' });
     }
     return { blogs  };
   }
