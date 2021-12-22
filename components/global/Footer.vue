@@ -1,44 +1,23 @@
 <template>
   <footer class="bg-white">
     <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+
       <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
-        <div class="px-5 py-2">
+        <div class="px-3 py-2">
           <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-            About
+            Impressum
           </a>
         </div>
 
-        <div class="px-5 py-2">
+        <div class="px-3 py-2">
           <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-            Blog
+            Contacts
           </a>
         </div>
 
-        <div class="px-5 py-2">
-          <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-            Jobs
-          </a>
-        </div>
-
-        <div class="px-5 py-2">
-          <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-            Press
-          </a>
-        </div>
-
-        <div class="px-5 py-2">
-          <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-            Accessibility
-          </a>
-        </div>
-
-        <div class="px-5 py-2">
-          <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-            Partners
-          </a>
-        </div>
       </nav>
-      <div class="mt-8 flex justify-center space-x-6">
+
+      <div class="mt-3 flex justify-center space-x-6">
         <a href="https://facebook.com/redlink.at" target="_blank" class="text-gray-400 hover:text-gray-500">
           <span class="sr-only">Facebook</span>
           <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -67,7 +46,7 @@
           </svg>
         </a>
       </div>
-      <p class="mt-8 text-center text-base text-gray-400">
+      <p class="mt-2 text-center text-base text-gray-400">
         &copy; 2021 Redlink GmbH
       </p>
     </div>
