@@ -10,7 +10,7 @@
         <p><a href="mailto:office@redlink.at">office@redlink.at</a></p>
       </div>
     </div>
-    <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto pb-12 pt-6 px-4 overflow-hidden sm:px-6 lg:px-8">
 
       <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
         <div class="px-3 py-2" v-for="route in routes" :key="route.keyName">
