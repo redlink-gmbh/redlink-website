@@ -4,7 +4,18 @@
                 :site-image-description="heroImage.description"
                 :site-image-action="heroImage.action"
                 :site-image-action-url="heroImage.actionUrl">
-    <h1>Company info</h1>
+    <div style="margin-top: 60px" class="content">
+      <p>
+        Unser Softwareunternehmen wurde 2013 gegründet und hat seinen Sitz in Salzburg. Wir bieten sowohl Software-Dienstleistungen als auch Produkte an. Unsere Kernthemen sind:
+      </p>
+    </div>
+    <img class="content-img" src="/img/what.png">
+    <div class="content">
+    <p>
+      Unsere Mitarbeiter entwickeln moderne Software-Lösungen. Die Expertise in unserem Team deckt dabei den gesamten Software-Entwicklungsprozess ab:
+    </p>
+    </div>
+    <img class="content-img" src="/img/workflow.png">
   </main-content>
 </template>
 <script>
@@ -37,3 +48,20 @@ export default {
   }
 };
 </script>
+<style lang="postcss" scoped>
+.content {
+  display: flex;
+  justify-content: center;
+  font-size:24px;
+  font-weight: bold;
+}
+
+.content p {
+  width: 80%;
+}
+
+.content-img {
+  width: 60%;
+  margin: 0 auto;
+}
+</style>
