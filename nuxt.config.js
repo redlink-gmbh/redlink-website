@@ -4,7 +4,6 @@ import postcssNesting from 'postcss-nesting';
 import postcssPresetEnv from 'postcss-preset-env';
 import postcssEasingGradients from 'postcss-easing-gradients';
 import * as SITE_INFO from './content/site/info.json';
-import { COLOR_MODE_FALLBACK } from './utils/globals.js';
 
 export default {
   target: 'static',
@@ -124,7 +123,7 @@ export default {
   },
   colorMode: {
     preference: 'system', // default value of $colorMode.preference
-    fallback: COLOR_MODE_FALLBACK, // fallback value if not system preference found
+    fallback: 'dark', // fallback value if not system preference found
     componentName: 'ColorScheme',
     cookie: {
       options: {
@@ -134,8 +133,8 @@ export default {
   },
   pwa: {
     icon: {
-      source: 'static/icon.png',
-      filename: 'icon.png'
+      source: 'static/iconOnlyR.png',
+      filename: 'iconOnlyR.png'
     },
     manifest: { name: SITE_INFO.sitename || process.env.npm_package_name || '', lang: process.env.lang },
     meta: {
@@ -146,60 +145,20 @@ export default {
     }
   },
   i18n: {
-    locales: ['nl', 'de'],
+    locales: ['en', 'de'],
     defaultLocale: 'de',
     vueI18n: {
       fallbackLocale: 'de',
       messages: {
-        nl: {
+        en: {
           home: {
-            latestNews: 'Laatste nieuws',
-            wineKirchbichl: 'Wijn van Friedlacher Kirchbichl'
+            message: "hi in englisch"
           },
-          header: {
-            aboutUs: 'Over ons',
-            news: 'Nieuws',
-            contact: 'Contact',
-            grapeVarieties: 'Druivensoorten',
-            impressum: 'Bedrijfsgegevens'
-          },
-          grapeVarieties: {
-            title: 'Druivensoorten'
-          },
-          news: {
-            title: 'Nieuws'
-          },
-          contact: {
-            title: 'Contact details'
-          },
-          impressum: {
-            title: 'Bedrijfsgegevens'
-          }
         },
         de: {
           home: {
-            latestNews: 'Letzte News',
-            wineKirchbichl: 'Wein vom Friedlacher Kirchbichl'
+            message: "serwus"
           },
-          header: {
-            aboutUs: 'Über uns',
-            news: 'News',
-            contact: 'Kontakt',
-            grapeVarieties: 'Rebsorten',
-            impressum: 'Impressum'
-          },
-          grapeVarieties: {
-            title: 'Rebsorten'
-          },
-          news: {
-            title: 'News'
-          },
-          contact: {
-            title: 'Kontaktdaten'
-          },
-          impressum: {
-            title: 'Impressum'
-          }
         }
       }
     }
