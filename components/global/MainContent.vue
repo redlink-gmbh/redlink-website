@@ -11,7 +11,7 @@
           <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
             <h1 v-if="siteImageHeader" class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
               <div class="main-title" style="display: flex; justify-content: center">
-                <div style="padding: 3px 10px; background-color: white">{{ siteImageHeader }}</div>
+                <div style="padding: 3px 10px; background-color: rgb(255,255,255,0.75)">{{ siteImageHeader }}</div>
               </div>
             </h1>
             <p v-if="siteImageDescription" class="main-description mt-6 max-w-lg mx-auto text-center text-xl sm:max-w-6xl">
@@ -80,7 +80,7 @@ export default {
   }
 
   .main-description {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.75);
     color: black;
     padding: 10px;
   }
