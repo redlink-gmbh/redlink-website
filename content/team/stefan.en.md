@@ -1,5 +1,5 @@
 ---
-name: Stefan Ebner
+name: Stefan Esterer
 role: Solution Engineer
 imageUrl: /img/team/se.jpg
 twitterUrl: #
