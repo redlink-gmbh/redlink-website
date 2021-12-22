@@ -1,0 +1,42 @@
+{
+  "name": "redlink-website",
+  "version": "0.0.1",
+  "description": "Redlink website",
+  "author": "Redlink GmbH",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markus-ebner/redlink-website"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@nuxt/content": "^1.13.1",
+    "nuxt": "^2.15.0",
+    "nuxt-i18n": "^6.26.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/color-mode": "^2.0.3",
+    "@nuxtjs/pwa": "^3.3.5",
+    "@nuxtjs/svg": "^0.1.12",
+    "@nuxtjs/tailwindcss": "^3.4.2",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "netlify-cli": "^3.8.3",
+    "nuxt-purgecss": "^1.0.0",
+    "path": "^0.12.7",
+    "postcss-easing-gradients": "^3.0.1",
+    "postcss-import": "^12.0.1",
+    "postcss-nesting": "^7.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^1.16.4",
+    "tailwindcss": "^1.9.6",
+    "tailwindcss-dark-mode": "^1.1.7",
+    "vue-content-placeholders": "^0.2.1"
+  }
+}
