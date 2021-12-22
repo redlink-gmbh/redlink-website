@@ -57,7 +57,7 @@ export default {
     } catch (e) {
       error({ message: 'News entries not found' });
     }
-    return { team  };
+    return { team: team  };
   }
 };
 </script>

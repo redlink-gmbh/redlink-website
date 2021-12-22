@@ -1,6 +1,6 @@
 <template>
   <main-content>
-    <h1>Start page</h1>
+    <h1>Company info</h1>
   </main-content>
 </template>
 <script>
@@ -15,7 +15,6 @@ export default {
     let posts;
     try {
       siteInfo = await $content('site').fetch();
-      posts = await $content('news').fetch();
     } catch (e) {
       error({ message: 'News entries not found' });
     }
