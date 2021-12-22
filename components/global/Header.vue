@@ -66,12 +66,12 @@ export default {
   display: flex;
   justify-content: space-between;
   height: 80px;
-  background-color: black;
+  background-color: transparent;
   padding: 0 50px;
   transition: background-color 0.5s ease;
 }
 .header-fade-in {
-  background-color: red;
+  background-color: black;
   transition: background-color 0.5s ease;
 }
 .logo {
