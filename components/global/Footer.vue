@@ -15,18 +15,11 @@
     <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
 
       <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
-        <div class="px-3 py-2">
-          <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-            Impressum
+        <div class="px-3 py-2" v-for="route in routes" :key="route.keyName">
+          <a v-bind:href="route.route" class="text-base text-gray-500 hover:text-gray-900">
+            {{ $t(`footer.${route.keyName}`) }}
           </a>
         </div>
-
-        <div class="px-3 py-2">
-          <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-            Contacts
-          </a>
-        </div>
-
       </nav>
 
       <div class="mt-3 flex justify-center space-x-6">
@@ -69,8 +62,7 @@
       <div class="max-w-7xl mx-auto overflow-hidden sm:px-6 lg:px-8 py-4 flex flex-wrap justify-center ">
         <nav class="mt-2 flex flex-wrap justify-center mr-4" aria-label="Footer">
           <div class="ml-2">
-            <nuxt-link class="mr-1" :to="switchLocalePath('de')">DE</nuxt-link>
-            /
+            <nuxt-link class="mr-1" :to="switchLocalePath('de')">DE</nuxt-link>/
             <nuxt-link :to="switchLocalePath('en')">EN</nuxt-link>
           </div>
         </nav>
@@ -78,42 +70,26 @@
           &copy; 2021 Redlink GmbH
         </p>
       </div>
-
     </div>
   </footer>
-
-
-  <!--  <footer class="bg-white fixed bottom-0 w-full">
-      <div class="max-w-7xl mx-auto overflow-hidden sm:px-6 lg:px-8 py-4 flex flex-wrap justify-center ">
-        <nav class="flex flex-wrap justify-center mr-4" aria-label="Footer">
-          <div class="ml-2">
-            <nuxt-link class="mr-1" :to="switchLocalePath('nl')">NL</nuxt-link>/
-            <nuxt-link :to="switchLocalePath('de')">DE</nuxt-link>
-          </div>
-          <nuxt-link class="ml-2" v-for="route of routes" :key="route.keyName" :to="localePath(route.route)">{{
-            $t(`header.${route.keyName}`)
-          }}</nuxt-link>
-          &lt;!&ndash;        <a href="/admin" class="ml-2" target="_blank">Admin</a>&ndash;&gt;
-        </nav>
-        <p class="text-center text-base text-gray-300">
-          &copy; 2021 Redlink GmbH
-        </p>
-      </div>
-    </footer>-->
 </template>
 
 <script>
 const routes = [
-  {keyName: 'contact', route: '/contact'},
-  {keyName: 'impressum', route: '/impressum'}
+  {
+    keyName: 'privacy',
+    route: '/privacy',
+  },
+  {
+    keyName: 'legal',
+    route: '/legal',
+  }
 ];
 
 export default {
   name: 'Footer',
   data: () => {
-    return {
-      routes
-    };
+    return { routes };
   }
 };
 </script>
