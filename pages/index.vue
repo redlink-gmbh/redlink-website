@@ -5,15 +5,11 @@
                 :site-image-action="heroImage.action"
                 :site-image-action-url="heroImage.actionUrl">
     <div style="margin-top: 60px" class="content">
-      <p>
-        Unser Softwareunternehmen wurde 2013 gegründet und hat seinen Sitz in Salzburg. Wir bieten sowohl Software-Dienstleistungen als auch Produkte an. Unsere Kernthemen sind:
-      </p>
+      <p>{{ $t(`home.what`) }}</p>
     </div>
     <img class="content-img" src="/img/what.png">
     <div class="content">
-    <p>
-      Unsere Mitarbeiter entwickeln moderne Software-Lösungen. Die Expertise in unserem Team deckt dabei den gesamten Software-Entwicklungsprozess ab:
-    </p>
+      <p>{{ $t(`home.workflow`) }}</p>
     </div>
     <img class="content-img" src="/img/workflow.png">
   </main-content>
