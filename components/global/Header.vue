@@ -67,13 +67,13 @@ export default {
   display: flex;
   justify-content: space-between;
   height: 80px;
-  background-color: transparent;
+  background: transparent;
   padding: 0 50px;
-  transition: background-color 0.5s ease;
+  transition: background 0.5s ease;
 }
 .header-fade-in {
-  background-color: black;
-  transition: background-color 0.5s ease;
+  background: var(--color-primary);
+  transition: background 0.5s ease;
 }
 .logo {
   height: 60px;

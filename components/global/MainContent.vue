@@ -6,7 +6,7 @@
         <div class="relative shadow-xl sm:overflow-hidden">
           <div class="absolute inset-0">
             <img class="h-full w-full object-cover" :src="siteImageUrl" alt="header picture">
-            <div class="absolute inset-0 bg-red-300 mix-blend-multiply opacity-50"></div>
+            <div class="main-image absolute inset-0 mix-blend-multiply"></div>
           </div>
           <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
             <h1 v-if="siteImageHeader" class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
@@ -17,7 +17,7 @@
             </p>
             <div v-if="siteImageAction" class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:gap-5">
-                <a href="#" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-red-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8">
+                <a href="#" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-neutral-400 bg-opacity-60 hover:bg-opacity-70 sm:px-8">
                   {{ siteImageAction }}
                 </a>
               </div>
@@ -55,3 +55,10 @@ export default {
   }
 };
 </script>
+<style lang="postcss" scoped>
+
+  .main-image {
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.65) 100%) no-repeat center center scroll;
+  }
+
+</style>
