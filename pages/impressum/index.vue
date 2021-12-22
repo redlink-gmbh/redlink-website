@@ -1,9 +1,0 @@
-<template>
-  <main-content>
-    <h1>Impressum</h1>
-  </main-content>
-</template>
-
-<script>
-export default {};
-</script>
