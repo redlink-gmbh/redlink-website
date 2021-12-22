@@ -16,7 +16,7 @@ i18n:
   # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
   # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
   # single_file - persists a single file in `<folder>/<slug>.<extension>`
-  structure: multiple_folders
+  structure: multiple_files
 
   # Required - a list of locales to show in the editor UI
   locales: [de, en]
@@ -63,13 +63,13 @@ collections:
             hint: "This is used for contacting you via phone",
           }
           - { label: "Body", name: "siteStartBody", widget: "markdown", required: false, i18n: true }
-  - name: "news"
-    label: "News"
-    folder: "content/news"
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
     i18n: true
     create: true
     format: "frontmatter"
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "blog/{{slug}}"
     # editor:
     #   preview: true
     fields:
@@ -81,93 +81,7 @@ collections:
           i18n: true,
           required: false,
         }
-      - { label: "Body", name: "body", widget: "markdown", required: false, i18n: true }
-  - name: "varieties"
-    i18n: true
-    label: "Grape varieties"
-    label_singular: "Project"
-    folder: "content/varieties"
-    create: true
-    format: "frontmatter"
-    slug: "{{slug}}"
-    preview_path: "varieties/{{slug}}"
-    fields:
-      - {
-          label: "Title",
-          name: "title",
-          widget: "string",
-          i18n: true,
-          required: true,
-        }
-      - {
-          label: "Description",
-          name: "description",
-          widget: "string",
-          i18n: true,
-          required: false,
-        }
-      - {
-          label: "Cover Image",
-          name: "cover",
-          widget: "image",
-          required: false,
-          i18n: true,
-          allow_multiple: false,
-        }
-      - {
-          label: "Content",
-          name: "body",
-          widget: "markdown",
-          i18n: true,
-          required: false,
-        }
-      - {
-          i18n: true,
-          label: "Gallery",
-          name: "gallery",
-          widget: "list",
-          required: false,
-          summary: "{{fields.image}}",
-          field: { label: "Image", name: "image", widget: "image" },
-        }
-  - name: "about"
-    i18n: true
-    label: "About us"
-    label_singular: "About us"
-    folder: "content/about"
-    format: "frontmatter"
-    slug: "about"
-    preview_path: "about"
-    fields:
-      - {
-        label: "Title",
-        name: "title",
-        widget: "string",
-        i18n: true,
-        required: true,
-      }
-      - {
-        label: "Description",
-        name: "description",
-        widget: "string",
-        i18n: true,
-        required: false,
-      }
-      - {
-        label: "Cover Image",
-        name: "cover",
-        widget: "image",
-        required: false,
-        i18n: true,
-        allow_multiple: false,
-      }
-      - {
-        label: "Content",
-        name: "body",
-        widget: "markdown",
-        i18n: true,
-        required: false,
-      }
+      - { label: "Content", name: "body", widget: "markdown", required: false, i18n: true }
   - name: "team"
     i18n: true
     label: "Grape varieties"

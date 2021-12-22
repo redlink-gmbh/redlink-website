@@ -1,6 +1,6 @@
 <template>
   <main-content>
-    <h1>Impressum</h1>
+    <h1>Blogs</h1>
   </main-content>
 </template>
 

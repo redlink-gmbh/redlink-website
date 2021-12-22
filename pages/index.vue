@@ -1,18 +1,7 @@
 <template>
-  <div>
-    <img class="cover-image" :src="'/img/etikett.jpeg'" />
-    <main>
-      <section class="self-center flex flex-col flex-1 items-center justify-center">
-        <h1 class="title text-center">{{ siteInfos.sitename || 'Weinmacher Nick' }}</h1>
-        <h2 class="subtitle text-center">{{ $t('home.wineKirchbichl') || siteInfos.sitedescription }}</h2>
-      </section>
-
-      <section class="mt-8">
-        <h3 class="text-primary-600 dark:text-primary-400 max-w-5xl mx-auto">{{ $t('home.latestNews') }}</h3>
-        <posts post-type="news" :amount="1" />
-      </section>
-    </main>
-  </div>
+  <main-content>
+    <h1>Start page</h1>
+  </main-content>
 </template>
 <script>
 export default {
