@@ -52,16 +52,16 @@ export default {
 .content {
   display: flex;
   justify-content: center;
-  font-size:24px;
+  font-size:20px;
   font-weight: bold;
 }
 
 .content p {
-  width: 80%;
+  width: 100%;
 }
 
 .content-img {
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
 }
 </style>
