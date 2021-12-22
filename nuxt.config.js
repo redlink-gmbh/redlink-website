@@ -133,8 +133,8 @@ export default {
   },
   pwa: {
     icon: {
-      source: 'static/icon.png',
-      filename: 'icon.png'
+      source: 'static/iconOnlyR.png',
+      filename: 'iconOnlyR.png'
     },
     manifest: { name: SITE_INFO.sitename || process.env.npm_package_name || '', lang: process.env.lang },
     meta: {
@@ -145,60 +145,20 @@ export default {
     }
   },
   i18n: {
-    locales: ['nl', 'de'],
+    locales: ['en', 'de'],
     defaultLocale: 'de',
     vueI18n: {
       fallbackLocale: 'de',
       messages: {
-        nl: {
+        en: {
           home: {
-            latestNews: 'Laatste nieuws',
-            wineKirchbichl: 'Wijn van Friedlacher Kirchbichl'
+            message: "hi in englisch"
           },
-          header: {
-            aboutUs: 'Over ons',
-            news: 'Nieuws',
-            contact: 'Contact',
-            grapeVarieties: 'Druivensoorten',
-            impressum: 'Bedrijfsgegevens'
-          },
-          grapeVarieties: {
-            title: 'Druivensoorten'
-          },
-          news: {
-            title: 'Nieuws'
-          },
-          contact: {
-            title: 'Contact details'
-          },
-          impressum: {
-            title: 'Bedrijfsgegevens'
-          }
         },
         de: {
           home: {
-            latestNews: 'Letzte News',
-            wineKirchbichl: 'Wein vom Friedlacher Kirchbichl'
+            message: "serwus"
           },
-          header: {
-            aboutUs: 'Über uns',
-            news: 'News',
-            contact: 'Kontakt',
-            grapeVarieties: 'Rebsorten',
-            impressum: 'Impressum'
-          },
-          grapeVarieties: {
-            title: 'Rebsorten'
-          },
-          news: {
-            title: 'News'
-          },
-          contact: {
-            title: 'Kontaktdaten'
-          },
-          impressum: {
-            title: 'Impressum'
-          }
         }
       }
     }
