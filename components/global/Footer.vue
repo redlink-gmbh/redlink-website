@@ -8,15 +8,13 @@
         <p>Office: <a href="tel:+43 662 27 66 80">+43 662 27 66 80</a><br>
           Mobil: <a href="tel:+43 660 2771 228">+43 660 2771 228</a></p>
         <p><a href="mailto:office@redlink.at">office@redlink.at</a></p>
-        <p>Firmenbuchnummer: FN 394013g<br>
-          UID: ATU67844229</p>
       </div>
     </div>
-    <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto pb-12 pt-6 px-4 overflow-hidden sm:px-6 lg:px-8">
 
       <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
         <div class="px-3 py-2" v-for="route in routes" :key="route.keyName">
-          <a v-bind:href="route.route" class="text-base text-gray-500 hover:text-gray-900">
+          <a v-bind:href="`${$i18n.locale !== 'de' ? '/' + $i18n.locale : ''}${route.route}`" class="text-base text-gray-500 hover:text-gray-900">
             {{ $t(`footer.${route.keyName}`) }}
           </a>
         </div>
