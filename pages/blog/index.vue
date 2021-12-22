@@ -16,7 +16,6 @@ export default {
     let blogs;
     try {
       blogs = await $content('team').where({ slug: { $contains: `.${i18n.locale || 'de'}` } }).fetch();
-      console.log(blogs)
     } catch (e) {
       error({ message: 'News entries not found' });
     }
