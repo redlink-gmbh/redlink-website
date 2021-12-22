@@ -19,7 +19,7 @@
             </p>
             <div v-if="siteImageAction" class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:gap-5">
-                <a v-bind:href="siteImageActionUrl" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-neutral-400 bg-opacity-60 hover:bg-opacity-70 sm:px-8">
+                <a v-bind:href="siteImageActionUrl" class="flex link items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-neutral-400 bg-opacity-60 hover:bg-opacity-70 sm:px-8">
                   {{ siteImageAction }}
                 </a>
               </div>
@@ -77,6 +77,22 @@ export default {
     background-color: white;
     color: black;
     padding: 10px;
+  }
+
+  .link {
+    font-weight: bold;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    height: 40px;
+    border: 2px solid white;
+    margin-left: 10px;
+    background-color:rgba(0, 0, 0, 0.5);
+
+    &:hover {
+      background-color: white;
+      color: black;
+    }
   }
 
 </style>
