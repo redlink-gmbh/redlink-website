@@ -4,7 +4,6 @@ import postcssNesting from 'postcss-nesting';
 import postcssPresetEnv from 'postcss-preset-env';
 import postcssEasingGradients from 'postcss-easing-gradients';
 import * as SITE_INFO from './content/site/info.json';
-import { COLOR_MODE_FALLBACK } from './utils/globals.js';
 
 export default {
   target: 'static',
@@ -124,7 +123,7 @@ export default {
   },
   colorMode: {
     preference: 'system', // default value of $colorMode.preference
-    fallback: COLOR_MODE_FALLBACK, // fallback value if not system preference found
+    fallback: 'dark', // fallback value if not system preference found
     componentName: 'ColorScheme',
     cookie: {
       options: {
