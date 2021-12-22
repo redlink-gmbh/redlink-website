@@ -46,9 +46,17 @@
           </svg>
         </a>
       </div>
-      <p class="mt-2 text-center text-base text-gray-400">
-        &copy; 2021 Redlink GmbH
-      </p>
+      <div class="max-w-7xl mx-auto overflow-hidden sm:px-6 lg:px-8 py-4 flex flex-wrap justify-center ">
+        <nav class="mt-2 flex flex-wrap justify-center mr-4" aria-label="Footer">
+          <div class="ml-2">
+            <nuxt-link class="mr-1" :to="switchLocalePath('de')">DE</nuxt-link>/
+            <nuxt-link :to="switchLocalePath('en')">EN</nuxt-link>
+          </div>
+        </nav>
+        <p class="mt-2 flex-wrap justify-center text-base text-gray-400">
+          &copy; 2021 Redlink GmbH
+        </p>
+      </div>
     </div>
   </footer>
 

@@ -1,11 +1,11 @@
-site_url: https://weinmacher-nick.netlify.app/
-logo_url: https://weinmacher-nick.netlify.app/iconBg.png
+site_url: https://redlink.netlify.app/
+logo_url: https://redlink.netlify.app/iconOnlyR.png
 
 # publish_mode: editorial_workflow
 backend:
   name: git-gateway
   branch: master
-  repo: markus-ebner/weinmacher-nick
+  repo: redlink-gmbh/redlink-website
   squash_merges: true
 
 media_folder: static/img
@@ -16,10 +16,10 @@ i18n:
   # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
   # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
   # single_file - persists a single file in `<folder>/<slug>.<extension>`
-  structure: multiple_files
+  structure: multiple_folders
 
   # Required - a list of locales to show in the editor UI
-  locales: [de, nl]
+  locales: [de, en]
 
   # Optional, defaults to the first item in locales.
   # The locale to be used for fields validation and as a baseline for the entry.
@@ -165,6 +165,52 @@ collections:
         label: "Content",
         name: "body",
         widget: "markdown",
+        i18n: true,
+        required: false,
+      }
+  - name: "team"
+    i18n: true
+    label: "Grape varieties"
+    label_singular: "Project"
+    folder: "content/team"
+    create: true
+    format: "frontmatter"
+    slug: "{{slug}}"
+    preview_path: "team/{{slug}}"
+    fields:
+      - {
+        label: "Title",
+        name: "name",
+        widget: "string",
+        i18n: true,
+        required: true,
+      }
+      - {
+        label: "Description",
+        name: "role",
+        widget: "string",
+        i18n: true,
+        required: false,
+      }
+      - {
+        label: "Cover Image",
+        name: "imageUrl",
+        widget: "image",
+        required: false,
+        i18n: true,
+        allow_multiple: false,
+      }
+      - {
+        label: "Description",
+        name: "twitterUrl",
+        widget: "string",
+        i18n: true,
+        required: false,
+      }
+      - {
+        label: "Description",
+        name: "linkedinUrl",
+        widget: "string",
         i18n: true,
         required: false,
       }
