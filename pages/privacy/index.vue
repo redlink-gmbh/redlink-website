@@ -21,3 +21,8 @@ export default {
   }
 };
 </script>
+<style>
+.nuxt-content-container {
+  margin-left: 20px;
+}
+</style>
