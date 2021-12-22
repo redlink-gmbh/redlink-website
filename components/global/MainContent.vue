@@ -10,9 +10,11 @@
           </div>
           <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
             <h1 v-if="siteImageHeader" class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-              <span class="block text-red-500">{{ siteImageHeader }}</span>
+              <div class="main-title" style="display: flex; justify-content: center">
+                <div style="padding: 3px 10px; background-color: white">{{ siteImageHeader }}</div>
+              </div>
             </h1>
-            <p v-if="siteImageDescription" class="mt-6 max-w-lg mx-auto text-center text-xl text-red-100 sm:max-w-3xl">
+            <p v-if="siteImageDescription" class="main-description mt-6 max-w-lg mx-auto text-center text-xl sm:max-w-6xl">
               {{ siteImageDescription }}
             </p>
             <div v-if="siteImageAction" class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
@@ -59,6 +61,18 @@ export default {
 
   .main-image {
     background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.65) 100%) no-repeat center center scroll;
+  }
+
+  .main-title {
+    display: flex;
+    justify-content: center;
+    color: var(--color-primary);
+  }
+
+  .main-description {
+    background-color: white;
+    color: black;
+    padding: 10px;
   }
 
 </style>
