@@ -128,3 +128,20 @@ collections:
         i18n: true,
         required: false,
       }
+  - name: "jobs"
+    label: "Jobs"
+    folder: "content/jobs"
+    i18n: true
+    create: true
+    format: "frontmatter"
+    slug: "jobs/{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string", required: true, i18n: true }
+      - {
+        label: "Description",
+        name: "description",
+        widget: "string",
+        i18n: true,
+        required: false,
+      }
+      - { label: "Content", name: "body", widget: "markdown", required: false, i18n: true }
