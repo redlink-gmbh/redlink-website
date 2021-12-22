@@ -31,7 +31,7 @@
     <!-- This example requires Tailwind CSS v2.0+ -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- We've used 3xl here, but feel free to try other max-widths based on your needs -->
-      <div class="max-w-5xl mx-auto">
+      <div class="max-w-5xl mx-auto mt-4">
         <slot />
       </div>
     </div>
