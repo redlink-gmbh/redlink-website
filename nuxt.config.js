@@ -151,11 +151,23 @@ export default {
       fallbackLocale: 'de',
       messages: {
         en: {
+          header: {
+            about: "About us",
+            team: "Team",
+            jobs: "Jobs",
+            blog: "Blog"
+          },
           home: {
             message: "hi in englisch"
           },
         },
         de: {
+          header: {
+            about: "Über uns",
+            team: "Team",
+            jobs: "Jobs",
+            blog: "Blog"
+          },
           home: {
             message: "serwus"
           },
