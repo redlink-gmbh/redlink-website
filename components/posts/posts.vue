@@ -1,27 +1,27 @@
 <template>
   <ul v-if="posts.length > 0" class="cards">
-    <li v-for="(post, index) in posts" :key="index">
-      <nuxt-link :to="localePath({ path: `${postType}/${post.slug}` })" class="card card--clickable ">
+    <li v-for="(team, index) in posts" :key="index">
+      <nuxt-link :to="localePath({ path: `${postType}/${team.slug}` })" class="card card--clickable ">
         <template v-if="postType === 'varieties'">
           <span class="flex-1">
-            <h3 class="card-title">{{ post.title }}</h3>
-            <p class="mt-2">{{ post.description }}</p>
+            <h3 class="card-title">{{ team.title }}</h3>
+            <p class="mt-2">{{ team.description }}</p>
           </span>
-          <img v-if="post.cover" class="preview-img" :src="post.cover" />
+          <img v-if="team.cover" class="preview-img" :src="team.cover" />
         </template>
 
         <template v-else>
           <span class="w-full">
             <span class="flex justify-between align-baseline">
-              <h3 class="card-title">{{ post.title }}</h3>
+              <h3 class="card-title">{{ team.title }}</h3>
               <h6
-                v-if="post.createdAt"
+                v-if="team.createdAt"
                 class="self-start inline-block mt-0 py-1 px-2 bg-gray text-white text-base font-medium rounded-sm whitespace-no-wrap"
               >
-                {{ formatDate(post.createdAt) }}
+                {{ formatDate(team.createdAt) }}
               </h6>
             </span>
-            <p class="mt-2">{{ post.description }}</p>
+            <p class="mt-2">{{ team.description }}</p>
           </span>
         </template>
       </nuxt-link>
@@ -45,8 +45,8 @@ export default {
   props: {
     postType: {
       type: String,
-      default: 'news',
-      validator: val => ['news', 'varieties'].includes(val)
+      default: 'team',
+      validator: val => ['team', 'team'].includes(val)
     },
     amount: {
       // ? https://content.nuxtjs.org/fetching#limitn
