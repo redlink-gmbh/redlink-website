@@ -61,6 +61,7 @@ export default {
 
 <style lang="postcss" scoped>
 .header {
+  z-index: 10;
   width: 100%;
   position: fixed;
   display: flex;
