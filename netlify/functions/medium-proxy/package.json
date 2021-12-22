@@ -1,0 +1,9 @@
+{
+  "name": "medium-proxy",
+  "version": "0.0.1",
+  "description": "medium-proxy",
+  "author": "Redlink GmbH",
+  "dependencies": {
+    "rss-parser": "^3.12.0"
+  }
+}
