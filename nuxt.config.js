@@ -160,6 +160,10 @@ export default {
           home: {
             message: "hi in englisch"
           },
+          footer: {
+            legal: 'Legal Notice',
+            privacy: 'Privacy Policy',
+          },
         },
         de: {
           header: {
@@ -170,6 +174,10 @@ export default {
           },
           home: {
             message: "serwus"
+          },
+          footer: {
+            legal: 'Impressum',
+            privacy: 'Datenschutz',
           },
         }
       }
