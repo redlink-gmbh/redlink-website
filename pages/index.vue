@@ -53,7 +53,7 @@ export default {
   display: flex;
   justify-content: center;
   font-size:20px;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .content p {
