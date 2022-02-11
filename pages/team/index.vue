@@ -1,6 +1,6 @@
 <template>
   <main-content>
-    <section class="py-12 overflow-hidden md:py-20 lg:py-24">
+    <section class="py-12 overflow-hidden md:py-20">
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <svg class="absolute top-full right-full transform translate-x-1/3 -translate-y-1/4 lg:translate-x-20 xl:-translate-y-20" width="1000" height="404" fill="none" viewBox="0 0 404 404" role="img" aria-labelledby="svg-workcation">
           <defs>

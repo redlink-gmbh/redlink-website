@@ -9,7 +9,7 @@
             <div class="main-image absolute inset-0 mix-blend-multiply"></div>
           </div>
           <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
-            <h1 v-if="siteImageHeader" class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+            <h1 v-if="siteImageHeader" class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl mt-20 md:mt-0">
               <div class="main-title" style="display: flex; justify-content: center">
                 <div style="padding: 3px 10px; background-color: rgb(255,255,255,0.75)">{{ siteImageHeader }}</div>
               </div>
