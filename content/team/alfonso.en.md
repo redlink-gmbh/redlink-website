@@ -4,7 +4,5 @@ role: Solution Engineer
 imageUrl: /img/team/an.jpg
 twitterUrl: #
 linkedinUrl: #
+quote: There is nothing better than teamwork!
 ---
-
-Hi, I am ...
-
