@@ -10,8 +10,11 @@
           <ul role="list" class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
             <li v-for="person in team" :key="person.name">
               <div class="space-y-4">
-                <div class="aspect-w-3 aspect-h-2">
+                <div class="employee-image aspect-w-3 aspect-h-2 relative">
                   <img class="object-cover shadow-lg rounded-lg" :src="person.imageUrl" alt="" />
+                  <div class="overlay-cite hidden absolute w-full h-full top-0 text-center">
+                    <span>Frontend is my passion!</span>
+                  </div>
                 </div>
 
                 <div class="space-y-2">
@@ -69,3 +72,13 @@ export default {
   }
 };
 </script>
+<style lang="postcss" scoped>
+  .overlay-cite {
+    display: none;
+    background: rgba(0,0,0, 0.6);
+    color: white;
+  }
+  .employee-image:hover .overlay-cite{
+    display: block;
+  }
+</style>

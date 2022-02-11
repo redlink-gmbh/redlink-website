@@ -1,9 +1,9 @@
 ---
 name: Markus Ebner
-role: Frontend Development & UX
+role: Frontend Architect & UX
 imageUrl: /img/team/me.jpg
-twitterUrl: #
-linkedinUrl: #
+twitterUrl: https://twitter.com/EbnerMarkus49
+linkedinUrl: https://www.linkedin.com/in/markus-ebner-9365a120b/
 ---
 
-Hi, Ich bin ...
+Frontend ist meine Leidenschaft!
