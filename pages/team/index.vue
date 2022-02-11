@@ -1,7 +1,45 @@
 <template>
   <main-content>
-    <div class="bg-white">
-      <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-12">
+    <section class="py-12 overflow-hidden md:py-20 lg:py-24">
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <svg class="absolute top-full right-full transform translate-x-1/3 -translate-y-1/4 lg:translate-x-20 xl:-translate-y-20" width="1000" height="404" fill="none" viewBox="0 0 404 404" role="img" aria-labelledby="svg-workcation">
+          <defs>
+            <pattern id="ad119f34-7694-4c31-947f-5c9d249b21f3" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+              <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+            </pattern>
+          </defs>
+          <rect width="1000" height="404" fill="url(#ad119f34-7694-4c31-947f-5c9d249b21f3)" />
+        </svg>
+
+        <div class="relative">
+          <blockquote class="mt-10">
+            <div class="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-gray-900">
+              <p>&ldquo;Redlink ist nur so gut wie sein Team. Jede/r einzelne ist ein wichtiger Baustein für unseren Erfolg!&rdquo;</p>
+            </div>
+            <footer class="mt-8">
+              <div class="md:flex md:items-center md:justify-center">
+                <div class="md:flex-shrink-0">
+                  <img class="mx-auto h-10 w-10 rounded-full" :src="thomasImg" alt="" />
+                </div>
+                <div class="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
+                  <div class="text-base font-medium text-gray-900">Dr. Thomas Kurz</div>
+
+                  <svg class="hidden md:block mx-1 h-5 w-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M11 0h3L9 20H6l5-20z" />
+                  </svg>
+
+                  <div class="text-base font-medium text-gray-500">CEO, Redlink GmbH</div>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+    <h1 class="mt-10">Meet the Team</h1>
+    <p>Wir sind immer auf der Suche nach motivierten Talenten im Bereich der digitalen Kommunikation und Softwareentwicklung. Wenn du Interesse hast Redlink und unser Team kennen zu lernen, dann
+      <a href="">let's talk.</a></p>
+    <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-12">
         <div class="space-y-12">
           <div class="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
             <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl"></h2>
@@ -52,7 +90,6 @@
           </ul>
         </div>
       </div>
-    </div>
   </main-content>
 </template>
 <script>
@@ -70,7 +107,8 @@ export default {
     } catch (e) {
       error({ message: 'News entries not found' });
     }
-    return { team: team  };
+    const thomasImg = team.find(member => member.role === 'CEO').imageUrl
+    return { team, thomasImg  };
   },
   methods: {
     showSocialMediaLink(data) {
