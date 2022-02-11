@@ -98,7 +98,6 @@ export default {
     let team;
     try {
       team = await $content('team').where({ slug: { $contains: `.${i18n.locale || 'de'}` } }).fetch();
-      console.log(team)
       team.sort((a,b) => {
         const sa = a.sort || 1000;
         const sb = b.sort || 1000;
