@@ -28,7 +28,7 @@ export default {
         header: 'Data that matters',
         description: 'Die Firma Redlink packt aktuelle Spitzentechnologien aus den Bereichen Information Discovery, Natural Language Processing und Artificial Intelligence in wartbare und langlebige Software. Dabei entstehen sowohl maßgeschneiderte Lösungen für nationale und internationale Kunden als auch universell einsetzbare Produkte.',
         action: "Let's talk",
-        actionUrl: "https://outlook.office365.com/owa/calendar/Redlink@redlink.at/bookings/",
+        actionUrl: "/contact",
       }
     }
   },
