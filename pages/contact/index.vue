@@ -72,7 +72,7 @@
             <div class="flex-1 bg-white p-6 flex flex-col justify-between">
               <div class="flex-shrink-0">
                 <iframe class="h-48 w-full object-cover" style="border:0" loading="lazy" allowfullscreen
-                        src="https://www.google.com/maps/embed/v1/place?q=Franz-Josef-Stra%C3%9Fe%2015%2C%20Salzburg%2C%20Austria&key=AIzaSyBRw4GQ0f1JlFX-f3Iil_kEpWrHVjp8W_4">
+                        src="https://www.google.com/maps/embed/v1/place?q=Franz-Josef-Stra%C3%9Fe%2015%2C%20Salzburg%2C%20Austria&key=">
                 </iframe>
               </div>
               <div class="flex-1">
