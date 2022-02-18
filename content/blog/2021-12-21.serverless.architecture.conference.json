@@ -1,0 +1,14 @@
+{
+  "title": "API & Serverless Architecture Conference Berlin 2021",
+  "href": "https://blog.redlink.at/api-serverless-architecture-conference-berlin-2021-an-opinionated-review-210211f218f",
+  "category": "Conferences",
+  "description": "This blog is a summary of the most important topics in the area of API design and serverless architecture that we have learned about and some thoughts about remote conferences in general.",
+  "date": "2021-12-21",
+  "imageUrl": "https://miro.medium.com/max/1028/1*RkpJmrBQm8MoN6cham0IZA.jpeg",
+  "readingTime": "6",
+  "author": {
+    "name": "Stefan Esterer",
+    "href": "#",
+    "imageUrl": "/img/team/se.jpg"
+  }
+}

@@ -36,11 +36,11 @@ export default {
     let siteInfo;
     let posts;
     try {
-      siteInfo = await $content('site').fetch();
+      siteInfo = await $content('site/info').fetch();
     } catch (e) {
-      error({ message: 'News entries not found' });
+      error({ message: 'Site info not found' });
     }
-    return { posts, siteInfos: siteInfo[0] };
+    return { posts, siteInfo };
   }
 };
 </script>

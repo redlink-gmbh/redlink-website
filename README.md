@@ -1,3 +1,11 @@
+# Content Generation
+
+## Manage your personal Data (Teams Page)
+TODO
+
+## Write a Blog
+TODO
+
 # 🏗️ Boilerplate for Nuxt, Tailwind & NetlifyCMS
 [![Netlify Status](https://api.netlify.com/api/v1/badges/743a4b2d-b0ef-4474-964b-a6050b56d10e/deploy-status)](https://app.netlify.com/sites/redlink-website)
 

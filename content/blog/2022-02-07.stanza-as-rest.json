@@ -1,0 +1,14 @@
+{
+  "title": "Stanford Stanza as a REST-less Service",
+  "href": "https://blog.redlink.at/stanford-stanza-as-a-rest-less-service-c0597e369032",
+  "category": "TechAndTools",
+  "description": "Stanza is a collection of accurate and efficient tools for the linguistic analysis of many human languages. In this blog we show how to serve Stanza as a Service via Restful API.",
+  "date": "2022-02-07",
+  "imageUrl": "https://github.com/stanfordnlp/stanza/raw/dev/images/stanza-logo.png",
+  "readingTime": "6",
+  "author": {
+    "name": "Rupert Westenthaler",
+    "href": "#",
+    "imageUrl": "/img/team/rw.jpg"
+  }
+}

@@ -104,7 +104,7 @@ export default {
         return sa-sb;
       })
     } catch (e) {
-      error({ message: 'News entries not found' });
+      error({ message: 'Teams entries not found' });
     }
     const thomasImg = team.find(member => member.role === 'CEO').imageUrl
     return { team, thomasImg  };

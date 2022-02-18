@@ -157,10 +157,6 @@ export default {
             jobs: "Jobs",
             blog: "Blog"
           },
-          home: {
-            what: "Redlink has been founded in 2013 in Salzburg. Our portfolio contains software development as well as products. Our core topics:",
-            workflow: "Our team develops innovative software solutions. It covers the whole skill-set of the software development livecycle:"
-          },
           footer: {
             legal: 'Legal Notice',
             privacy: 'Privacy Policy',
@@ -172,10 +168,6 @@ export default {
             team: "Team",
             jobs: "Jobs",
             blog: "Blog"
-          },
-          home: {
-            what: "Unser Softwareunternehmen wurde 2013 gegründet und hat seinen Sitz in Salzburg. Wir bieten sowohl Software-Dienstleistungen als auch Produkte an. Unsere Kernthemen sind:",
-            workflow: "Unsere Mitarbeiter entwickeln moderne Software-Lösungen. Die Expertise in unserem Team deckt dabei den gesamten Software-Entwicklungsprozess ab:"
           },
           footer: {
             legal: 'Impressum',

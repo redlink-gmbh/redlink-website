@@ -1,6 +1,6 @@
 ---
 name: Rupert Westenthaler
-role: Search Expert
+role: Search Expert & Minigolfer(en)
 imageUrl: /img/team/rw.jpg
 twitterUrl:
 linkedinUrl: #
